@@ -1,0 +1,28 @@
+.content2{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	text-align: center;
+	justify-content: flex-start;
+}
+
+.payment{
+	display: flex;
+	text-align: center;
+	margin-right: 30px;
+}
+
+.payment1{
+	background-color: #f2f5fa;
+	flex-grow: 1;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 20px;
+}
+.payment2{
+	background-color: #f2f5fa;
+	flex-grow: 1;
+	padding: 20px 0 20px 0;
+	margin: 10px;
+	border-radius: 20px;
+}

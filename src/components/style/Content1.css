@@ -1,0 +1,9 @@
+.content1{
+	text-align: center;
+	flex-grow: 1;
+	padding: 0 30px 20px 30px;
+}
+
+img{
+	border-radius: 30px;
+}
