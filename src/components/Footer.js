@@ -51,7 +51,7 @@ class Footer extends Component {
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
+                                    <th>Name:</th>
                                     <th>Creation Date</th>
                                     <th>Orbital Period</th>
                                 </tr>
