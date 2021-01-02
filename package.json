@@ -1,6 +1,6 @@
 {
   "name": "my-dashboard",
-  "homepage": "/",
+  "homepage": "build",
   "main": "src/index.js",
   "version": "0.1.0",
   "dependencies": {
