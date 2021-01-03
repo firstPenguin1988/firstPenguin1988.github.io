@@ -9,7 +9,7 @@ class Login extends Component {
                     
                     <div className="form-header">
                         <h3>Login</h3>
-                        <p>Login to Dashboard</p>
+                        <p>Login to your Dashboard</p>
                     </div>
                     
                     <div className="login-input">
@@ -21,11 +21,11 @@ class Login extends Component {
                     </div>
 
                     <div className="check-box">
-                        <input type="checkbox" className="form-input" id="check" />
+                        <input type="checkbox" className="check-box" id="check" />
                         <label className="remember-me" for="check">Remember me</label>
                     </div>
                     
-                    <div className="login-input">
+                    <div className="login-button">
                         <button className="form-button" type="submit">Login</button>
                     </div>
                     

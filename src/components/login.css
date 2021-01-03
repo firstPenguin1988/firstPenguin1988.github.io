@@ -9,7 +9,7 @@ html{
 body{
     font-family: 'Segoe UI', sans-serif;;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 3.0;
     height: 100%;
 }
 .login {
@@ -37,8 +37,19 @@ body{
     margin-bottom: 1rem;
 }
 .check-box{
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 12px;
+}
+.login-button{
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    width: 100%;
 }
 .form-button{
     background: #69d2e7;
