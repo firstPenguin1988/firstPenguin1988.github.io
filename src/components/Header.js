@@ -2,14 +2,23 @@ import React, {Component} from 'react';
 import './style/Header.css';
 import CharInfo from './CharInfo';
 import axios from 'axios';
+import {Link, Redirect} from 'react-router-dom';
 
 class Header extends Component {
-
+    
 	constructor(props){
 		super(props);
+		const token = localStorage.getItem("token");
+
+		let loggedIn = true;
+
+		if (token == null) {
+			loggedIn = false
+		} 
 	
 		this.state = {
 		  people: [],
+		  loggedIn
 		}
 	  }
 	
@@ -27,14 +36,18 @@ class Header extends Component {
 	
     render() {
 		const {people} = this.state;
+		if (this.state.loggedIn === false) {
+			return <Redirect to="/" />
+		}
 
         return (
             <div className="header">
 			    <div className="left">
-				    <input type="text" placeholder="Search.." />
+					<input type="text" placeholder="Search.." />
 			    </div>
 	
 			    <div className="right">
+					<Link to="/logout">Logout</Link>
 				    <select data-placeholder="Language...">
 					    <option value="EN">EN</option>
 					    <option value="FR">FR</option>

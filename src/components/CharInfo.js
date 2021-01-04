@@ -27,6 +27,7 @@ class CharInfo extends Component{
         return(
             <div className="user-details">
                 <img src={Avatar} alt="admin" id="avatar" onClick={this.close} />
+                
                 <ul>
                     <li><h6>Name: {this.props.people.name}</h6></li>
                     <li><h6>Gender: {this.props.people.gender}</h6></li>

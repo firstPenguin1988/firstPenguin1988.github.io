@@ -3,9 +3,9 @@ import './style/Aside.css';
 import Download from "./img/download.png";
 import Graph from "./img/graph1.png";
 import MonthlyChart from "./MonthlyChart";
-import DailyChart from "./DailyChart";
-import WeeklyChart from "./WeeklyChart";
-import YearlyChart from "./YearlyChart";
+//mport DailyChart from "./DailyChart";
+//import WeeklyChart from "./WeeklyChart";
+//import YearlyChart from "./YearlyChart";
 
 class Aside extends Component {
 
@@ -74,12 +74,12 @@ class Aside extends Component {
                         </div>								
                     </div>
                 </div> */}
-                {/*  ()
+                
                 <div className="middle">
                       
                     <MonthlyChart />
                                                             
-                </div>*/}
+                </div>
                 
                 
                 <div className="fifth">
