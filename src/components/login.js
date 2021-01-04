@@ -36,7 +36,7 @@ class Login extends Component {
         const {username, password} = this.state;
         //storing falg in localstorage
         if (username === "admin" && password === "admin123") {
-           localStorage.setItem("token", "welcometomydashboard")
+            localStorage.setItem("token", "welcometomydashboard")
             this.setState({
                 loggedIn: true
             })
@@ -45,9 +45,10 @@ class Login extends Component {
 
     /*
     myCheckbox = (ev) => {
-        console.log("checkbox" + ev.target.checked);
+        let {checked} = this.state;
+        
         this.setState ({
-            checked: ev.target.checked
+            checked: !checked
         })
         localStorage.setItem("token", "welcometomydashboard")
     } */
@@ -76,7 +77,7 @@ class Login extends Component {
                     </div>
 
                     <div className="check-box">
-                        <input type="checkbox" className="check-box" id="myCheck" />
+                        <input type="checkbox" className="check-box" id="myCheck" /*onClick={this.myCheckbox}*/ />
                         <label className="remember-me" for="check">Remember me</label>
                     </div>
                     

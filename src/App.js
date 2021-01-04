@@ -15,9 +15,10 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route exact path="/" component={Login} />
+          <Route exact path="/build" component={Login} />
           <Route path="/dashboard" component={Container} />
           <Route path="/logout" component={Logout} />
-          {/*<Route path="*" component={Error} /> */}
+          <Route path="*" component={Error} />
         </Switch>
       </div>
     );
