@@ -18,7 +18,7 @@ class Login extends Component {
         this.state = {
             username: '',
             password: '',
-            checked: false,
+            //checked: false,
             loggedIn
         };
     }

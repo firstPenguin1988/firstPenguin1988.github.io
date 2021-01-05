@@ -20,7 +20,7 @@ class Header extends Component {
 		  people: [],
 		  loggedIn
 		}
-	  }
+	}
 	
 	getPeople = () => {
 		return axios.get("https://swapi.dev/api/people/1/")

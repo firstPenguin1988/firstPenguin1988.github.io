@@ -5,6 +5,7 @@ import Container from './components/Container';
 import Login from './components/login';
 //import Error from "./components/Error";
 import Logout from "./components/logout"
+import User from "./components/user";
 
 class App extends Component {
 
@@ -15,9 +16,9 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route exact path="/build" component={Login} />
           <Route path="/dashboard" component={Container} />
           <Route path="/logout" component={Logout} />
+          <Route path="/user" component={User} />
           <Route path="*" component={Error} />
         </Switch>
       </div>
