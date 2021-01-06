@@ -1,37 +1,47 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
+import './style/user.css';
+import Person from './img/Person.jpg';
 
-class User extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            people: []
-        }
+export default class User extends Component {
+
+    state = {
+        people: []
     }
 
-    getPeople = () => {
-        return axios.get("https://swapi.dev/api/people/1/")
+    componentDidMount() {
+        axios.get("https://swapi.dev/api/people/1/")
         .then((response) => {
-            console.log("wwwwwww" + JSON.stringify(response.data));
             this.setState( {people: response.data} )
         })
     }
 
-    componentDidMount() {
-        this.getPeople()
-    }
-
     render() {
-        const {people} = this.state;
-
+        const p = this.state.people;
+        console.log(p);
         return (
-            <ul>
-                <li><h6>Name: {this.props.people.name}</h6></li>
-                <li><h6>Gender: {this.props.people.gender}</h6></li>
-                <li><h6>Birth date: {this.props.people.birth_year}</h6></li>
-            </ul>
+            <div className="profile">
+
+                <div className="profile-header">
+                    <img src={Person} />
+                    <h1>Name: {p.name}</h1>
+                </div>
+
+                <div className="profile-main">
+                    <ul className="profile-list">
+                        <li><h3>Birth date: {p.birth_year}</h3></li>
+                        <li><h3>Gender: {p.gender}</h3></li>
+                        <li><h3>Height: {p.height}</h3></li>
+                        <li><h3>Created: {p.created}</h3></li>
+                        <li><h3>Edited: {p.edited}</h3></li>
+                        <li><h3>URL: {p.url}</h3></li>
+                    </ul>
+                </div>  
+
+            </div>
         );
     }
+
 }
 
-export default User;
+

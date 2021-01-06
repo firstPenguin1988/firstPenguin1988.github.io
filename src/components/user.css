@@ -1,0 +1,35 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 50px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-header{
+    text-align: center;
+    background-color: #E5E7E9; 
+    width:100%
+}
+
+.profile-main{
+    padding: 30px;
+    list-style-type: square; 
+    margin-left: 0; 
+    padding-left: 30px;
+    margin-left: 0; 
+    padding-left: 0;
+    font-weight: bold;
+}
